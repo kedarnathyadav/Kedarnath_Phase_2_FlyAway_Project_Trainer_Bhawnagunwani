@@ -1,0 +1,40 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app id="WebApp_ID">
+	<display-name>Flyaway_Pase2_Trainer_Bhawnagunwani</display-name>
+	<servlet>
+		<servlet-name>Fetch_Places</servlet-name>
+		<display-name>Fetch_Places</display-name>
+		<description></description>
+		<servlet-class>com.kedarnath.web.Fetch_Places</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Addplace</servlet-name>
+		<display-name>Addplace</display-name>
+		<description></description>
+		<servlet-class>com.kedarnath.web.Addplace</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Addplace</servlet-name>
+		<url-pattern>/Addplace</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AddMasterflight</servlet-name>
+		<display-name>AddMasterflight</display-name>
+		<description></description>
+		<servlet-class>com.kedarnath.web.AddMasterflight</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Fetch_Places</servlet-name>
+		<url-pattern>/Fetch_Places</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AddMasterflight</servlet-name>
+		<url-pattern>/AddMasterflight</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>Fetch_Places</welcome-file>
+	</welcome-file-list>
+</web-app>
